@@ -1,3 +1,6 @@
+The aim of the project was to build a simple multi-server system for broadcasting activity objects between a number of clients. The multi-server system will load balance client requests over the servers, using a redirection mechanism to ask clients to reconnect to another server. It will allow clients to register a username and secret, that can act as an authentication mechanism. Clients can login and logout as either anonymous or using a username/secret pair. It will allow clients to broadcast an activity object to all other clients connected at the time.
+
+
 ** Opeing the first server on port 3000, ip will be local host(by default)
 ** and we need to set the secret
 java -jar ActivityStreamerServer.jar -lp 3000 -s gen
